@@ -139,20 +139,20 @@ Quindi il programma verrà eseguito con il relativo output grafico di Allegro.
 ![Architettura cluster](https://firebasestorage.googleapis.com/v0/b/personal-ee8a6.appspot.com/o/schema-cluster.png?alt=media&token=ebee4a34-9fb8-449a-a083-72ac5ef74447)
 
 ## Le Principali caratteristiche:
-- L’automa si basa su un’architettura Master-Slave.
-- Sono state utilizzate delle matrici statiche per consentire l’utilizzo dei DataType di MPI.
+- L’automa si basa su un’architettura **Master-Slave**.
+- Sono state utilizzate delle matrici statiche per consentire l’utilizzo dei **DataType** di MPI.
 - Si può eseguire dinamicamente su ‘n’ schiavi senza ricompilare il codice, a patto che ‘n’ sia divisibile per il numero di righe della matrice e che ogni schiavo abbia una matrice sufficientemente grande per ospitare la propria sezione.
 - Anche la dimensione della matrice può essere cambiata molto facilmente, basta modificare la variabile SIZE nel Main e la grandezza effettiva delle matrici nelle classi stesse (in questo caso necessita una ricompilazione).
 - Le matrici sono pensate per essere N x N, non sono ammesse altre configurazioni.
-- È stata implementata una modalità “benchmark” la quale genera lo stesso pattern di cellule ad ogni esecuzione ed alla fine di ‘n’ generazioni definite dall’utente, ritorna le tempistiche di esecuzione e il numero di cellule ancora vive. Quest’ultimo serve per determinare in maniera approssimativa la corretta esecuzione del programma, in quanto il numero dovrebbe risultare identico su distinte esecuzioni (su ‘p’ Processi) al pari di “SIZE” di M e di ‘n’ generazioni.
-- Per ottimizzare la memoria utilizzata da ogni processo, le istanze vengo chiamate sulla memoria dinamica, cosicché ogni processo ha un puntatore di tipo “Master” ed uno di tipo “Slaves” ma solo su uno di essi viene chiamata un’istanza “new <Master/Slaves>”. In questo modo, la memora statica di un Master, non verrà mai neanche allocata ad uno Slave e viceversa.
+- È stata implementata una modalità **“benchmark”** la quale genera lo stesso pattern di cellule ad ogni esecuzione ed alla fine di ‘n’ generazioni definite dall’utente, ritorna le tempistiche di esecuzione e il numero di cellule ancora vive. Quest’ultimo serve per determinare in maniera approssimativa la corretta esecuzione del programma, in quanto il numero dovrebbe risultare identico su distinte esecuzioni (su ‘p’ Processi) al pari di “SIZE” di M e di ‘n’ generazioni.
+- Per ottimizzare la memoria utilizzata da ogni processo, le istanze vengo chiamate sulla memoria dinamica, cosicché ogni processo ha un **puntatore** di tipo “Master” ed uno di tipo “Slaves” ma solo su uno di essi viene chiamata un’istanza **“new <Master/Slaves>”**. In questo modo, la memora statica di un Master, non verrà mai neanche allocata ad uno Slave e viceversa.
 
 ## Informazioni utili sulle misurazioni:
-- Tutti i Benchmark sono stati eseguiti su una matrice M [105] [105].
-- Gli Speed-Up sono stati calcolati prendendo come base i tempi del benchmark a due processi.
-- Il Test ad otto processi su singola macchina ha un drastico calo di performance, evidentemente il piccolo processore ARM-v7 Quad-Core non riesce a supportate il carico di lavoro.
-- I RaspBerry sono stati collegati via cavo ethernet con un bridge diretto, questo ha permesso una latenza media di 0.5ms, nonostante ciò solo nella misurazione Cluster a otto processi sono state raggiunte tempistiche simili alla migliore misurazione ottenuta in singola macchina singola, ovvero a quattro processi.
-- Possiamo anche notare che gli Speed-Up delle misurazioni Cluster hanno una buona scalabilità, questo portata a pensare che, in aggiunta di un altro dispositivo, avremmo potuto assistere ad una misurazione in timing migliore rispetto al Singolo RaspBerry.
+- Tutti i **Benchmark** sono stati eseguiti su una matrice **M[105][105]**.
+- Gli **Speed-Up** sono stati calcolati prendendo come base i tempi del benchmark a due processi.
+- Il Test ad otto processi su singola macchina ha un drastico calo di performance, evidentemente il piccolo processore **ARM-v7 Quad-Core** non riesce a supportate il carico di lavoro.
+- I RaspBerry sono stati collegati via cavo ethernet con un bridge diretto, questo ha permesso una latenza media di **0.5ms**, nonostante ciò solo nella misurazione Cluster a otto processi sono state raggiunte tempistiche simili alla migliore misurazione ottenuta in singola macchina singola, ovvero a quattro processi.
+- Possiamo anche notare che gli Speed-Up delle misurazioni Cluster hanno una buona scalabilità, questo portata a pensare che, <ins>in aggiunta di un altro dispositivo</ins>, avremmo potuto assistere ad una misurazione in **timing** migliore rispetto al Singolo RaspBerry.
 
 ## Speed-Up & Timings:
 ![speed-up singolo](https://firebasestorage.googleapis.com/v0/b/personal-ee8a6.appspot.com/o/speedups-1.png?alt=media&token=1c8d6877-aeba-4c13-b1ba-99d131200ff3)
