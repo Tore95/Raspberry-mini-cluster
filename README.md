@@ -162,7 +162,7 @@ Quindi il programma verrà eseguito con il relativo output grafico di Allegro.
 ![speed-up singolo](https://firebasestorage.googleapis.com/v0/b/personal-ee8a6.appspot.com/o/speedups-1.png?alt=media&token=1c8d6877-aeba-4c13-b1ba-99d131200ff3)
 
 | **Single RaspBerry - Timings**                                                          |
-|:-------------------------------|-----------|------------|-------------|----------------:|
+|--------------------------------|-----------|------------|-------------|-----------------|
 | **Processi**                   | 100 (Gen) | 1000 (Gen) | 10000 (Gen) | 100000 (Gen)    |
 | **2**                          | 0,17      | 1,65       | 16,03       | 160,42          |
 | **4**                          | 0,06      | 0,56       | 5,62        | 63,20           |
