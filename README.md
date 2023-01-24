@@ -1,7 +1,6 @@
 # Il Gioco della Vita
 ## Cluster di RaspBerryPi
 
-This is a project for "Parallel Algorithms and Distributed Systems". It's a RaspberryPi mini-cluster that runs a small simulation program using the MPI parallelization library for C++ called "Game of Life"
 Questo è un proggetto universitario per "Algoritmi Paralleli e Sistemi Distribuiti". Si tratta di un mini-cluster di RaspBerryPi che fa girare un piccolo programma di simulazione chiamato "Il gioco della Vita", utilizzando la libreria di parallelizzazione per C++ MPI.
 
 ![Immaggine di copertina](https://firebasestorage.googleapis.com/v0/b/personal-ee8a6.appspot.com/o/mini-cluster.png?alt=media&token=20e8cb2b-92d2-4b03-bded-fe30921af726)
