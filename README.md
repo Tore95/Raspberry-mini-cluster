@@ -42,7 +42,15 @@ mpic++ <Nome_Codice.cpp> -o <Nome_Output.out> -lallegro -lallegro_primitives
 ## Il comportamento del Main:
 Il Main si preoccupa di generare le corrette istanze per ogni processo, darà di default al processo “0” l’istanza del master e a tutti gli altri quella degli slave.
 ```c++
-if (id == 0) {
-  start_time = MPI_Wtime();
-}
+//  Creo l'istanza del master
+    if (id == 0) {
+        start_time = MPI_Wtime();
+        master_ptr = new master(SIZE, slaves_number, &status, &segment_snd, &segment_rcv, benchmark, bench_loop);
+        if (benchmark) master_ptr->seed_cells_generator(24241, ((SIZE * SIZE) * 0.4));
+        else master_ptr->random_cells_generator((SIZE * SIZE) * 0.4);
+    }
+//  Creo l'istanza degli schiavi
+    else {
+        slave_ptr = new slaves(SIZE, slaves_number, &status, &segment_snd, &segment_rcv);
+    }
 ```
