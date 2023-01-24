@@ -161,8 +161,11 @@ Quindi il programma verrà eseguito con il relativo output grafico di Allegro.
 ## Speed-Up & Timings:
 ![speed-up singolo](https://firebasestorage.googleapis.com/v0/b/personal-ee8a6.appspot.com/o/speedups-1.png?alt=media&token=1c8d6877-aeba-4c13-b1ba-99d131200ff3)
 
-| Attempt | #1    | #2    |
-| :-----: | :---: | :---: |
-| Seconds | 301   | 283   |
+| **Single RaspBerry - Timings**                                                          |
+|:---------------------------------------------------------------------------------------:|
+| **Processi**                   | 100 (Gen) | 1000 (Gen) | 10000 (Gen) | 100000 (Gen)    |
+| **2**                          | 0,17      | 1,65       | 16,03       | 160,42          |
+| **4**                          | 0,06      | 0,56       | 5,62        | 63,20           |
+| **8**                          | 2,23      | 26,23      | 209,00      | ~2000 (stimato) |
 
 ![speed-up doppio](https://firebasestorage.googleapis.com/v0/b/personal-ee8a6.appspot.com/o/speedups-2.png?alt=media&token=ad0ba82e-31fd-43cc-86cf-683c190083bc)
