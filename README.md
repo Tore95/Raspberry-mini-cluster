@@ -200,3 +200,41 @@ Quindi il programma verrà eseguito con il relativo output grafico di Allegro.
 </table>
 
 ![speed-up doppio](https://firebasestorage.googleapis.com/v0/b/personal-ee8a6.appspot.com/o/speedups-2.png?alt=media&token=ad0ba82e-31fd-43cc-86cf-683c190083bc)
+
+<table>
+<thead>
+  <tr>
+    <th colspan="5">RaspBerry Cluster - Timings</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Processi</td>
+    <td>100 (Gen)</td>
+    <td>1000 (Gen)</td>
+    <td>10000 (Gen)</td>
+    <td>100000 (Gen)</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>0,45</td>
+    <td>4,33</td>
+    <td>43,38</td>
+    <td>431,01</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>0,22</td>
+    <td>2,16</td>
+    <td>22,57</td>
+    <td>216,39</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>0,19</td>
+    <td>1,67</td>
+    <td>16,72</td>
+    <td>166,37</td>
+  </tr>
+</tbody>
+</table>
