@@ -164,33 +164,33 @@ Quindi il programma verrà eseguito con il relativo output grafico di Allegro.
 <table>
 <thead>
   <tr>
-    <th colspan="5">**Single RaspBerry - Timings**</th>
+    <th colspan="5">Single RaspBerry - Timings</th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td>**Processi**</td>
+    <td>Processi</td>
     <td>100 (Gen)</td>
     <td>1000 (Gen)</td>
     <td>10000 (Gen)</td>
     <td>100000 (Gen)</td>
   </tr>
   <tr>
-    <td>**2**</td>
+    <td>2</td>
     <td>0,17</td>
     <td>1,65</td>
     <td>16,03</td>
     <td>160,42</td>
   </tr>
   <tr>
-    <td>**4**</td>
+    <td>4</td>
     <td>0,06</td>
     <td>0,56</td>
     <td>5,62</td>
     <td>63,20</td>
   </tr>
   <tr>
-    <td>**8**</td>
+    <td>8</td>
     <td>2,23</td>
     <td>26,23</td>
     <td>209,00</td>
