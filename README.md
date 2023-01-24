@@ -39,3 +39,10 @@ In seguito, compilati con il compilatore per C++ di mpich più il link alle libr
 mpic++ <Nome_Codice.cpp> -o <Nome_Output.out> -lallegro -lallegro_primitives
 ```
 
+## Il comportamento del Main:
+Il Main si preoccupa di generare le corrette istanze per ogni processo, darà di default al processo “0” l’istanza del master e a tutti gli altri quella degli slave.
+```c++
+if (id == 0) {
+  start_time = MPI_Wtime();
+}
+```
