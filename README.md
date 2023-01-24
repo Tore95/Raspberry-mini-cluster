@@ -161,11 +161,42 @@ Quindi il programma verrà eseguito con il relativo output grafico di Allegro.
 ## Speed-Up & Timings:
 ![speed-up singolo](https://firebasestorage.googleapis.com/v0/b/personal-ee8a6.appspot.com/o/speedups-1.png?alt=media&token=1c8d6877-aeba-4c13-b1ba-99d131200ff3)
 
-| <td colspan=5>**Single RaspBerry - Timings** |
-|--------------------------------|-----------|------------|-------------|-----------------|
-| **Processi**                   | 100 (Gen) | 1000 (Gen) | 10000 (Gen) | 100000 (Gen)    |
-| **2**                          | 0,17      | 1,65       | 16,03       | 160,42          |
-| **4**                          | 0,06      | 0,56       | 5,62        | 63,20           |
-| **8**                          | 2,23      | 26,23      | 209,00      | ~2000 (stimato) |
+<table>
+<thead>
+  <tr>
+    <th colspan="5">**Single RaspBerry - Timings**</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>**Processi**</td>
+    <td>100 (Gen)</td>
+    <td>1000 (Gen)</td>
+    <td>10000 (Gen)</td>
+    <td>100000 (Gen)</td>
+  </tr>
+  <tr>
+    <td>**2**</td>
+    <td>0,17</td>
+    <td>1,65</td>
+    <td>16,03</td>
+    <td>160,42</td>
+  </tr>
+  <tr>
+    <td>**4**</td>
+    <td>0,06</td>
+    <td>0,56</td>
+    <td>5,62</td>
+    <td>63,20</td>
+  </tr>
+  <tr>
+    <td>**8**</td>
+    <td>2,23</td>
+    <td>26,23</td>
+    <td>209,00</td>
+    <td>~2000 (stimato)</td>
+  </tr>
+</tbody>
+</table>
 
 ![speed-up doppio](https://firebasestorage.googleapis.com/v0/b/personal-ee8a6.appspot.com/o/speedups-2.png?alt=media&token=ad0ba82e-31fd-43cc-86cf-683c190083bc)
