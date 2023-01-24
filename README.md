@@ -9,13 +9,10 @@ Questo è un proggetto universitario per "Algoritmi Paralleli e Sistemi Distribu
 L’automa cellulare che abbiamo realizzato è la versione standard del gioco della vita realizzato
 seguendo le seguenti regole di vicinato:
 
--Qualsiasi cellula viva con meno di due cellule vive adiacenti muore, come per effetto d'iso-
-lamento
--Qualsiasi cellula viva con due o tre cellule vive adiacenti sopravvive alla generazione suc-
-cessiva
--Qualsiasi cellula viva con più di tre cellule vive adiacenti muore, come per effetto di sovrap-
-popolazione
--Qualsiasi cellula morta con esattamente tre cellule vive adiacenti diventa una cellula viva,
+- Qualsiasi cellula viva con meno di due cellule vive adiacenti muore, come per effetto d'isolamento
+- Qualsiasi cellula viva con due o tre cellule vive adiacenti sopravvive alla generazione successiva
+- Qualsiasi cellula viva con più di tre cellule vive adiacenti muore, come per effetto di sovrappopolazione
+- Qualsiasi cellula morta con esattamente tre cellule vive adiacenti diventa una cellula viva,
 come per effetto di riproduzione
 
 (il vicinato è calcolato sulle otto posizioni adiacenti alla cellula)
